@@ -4,8 +4,8 @@
 > 固定地址：https://raw.githubusercontent.com/bob349-coder/ai-shuziren-collab/main/collab.md
 > （更新覆盖同一地址，不换链）
 
-- **版本号**：v2.0
-- **更新时间**：2026-10-11 02:15（北京时间）
+- **版本号**：v2.1
+- **更新时间**：2026-10-11 02:30（北京时间）
 
 ---
 
@@ -52,7 +52,7 @@
 | 方案确认 | V1.1 审核通过（5/5） |
 | R01–R03 角色定稿 | R01 ✅；R03 ✅；R02 v03 静态审核允许进入动作测试（成年感/外星辨识度/身份关联通过；头"大一圈"比例有偏差，先保留做动作测试，最终造型由用户确认） |
 | A03 样片 | v01 未通过；v02 动作测试基本通过但投影未通过（2.5 秒起蓝色悬浮圆环）；v03 干净版已上传待审：https://raw.githubusercontent.com/bob349-coder/ai-shuziren-collab/main/A/EP01_A03_v03_clean.mp4（表盘平面、手表上方空白、无悬浮圆环/光束/粒子；1248×704/24fps/10秒） |
-| A01–A08 批量 | 待开始 |
+| A01/A02/A04/A05 | v01 已上传待审（第一批）：A01 https://raw.githubusercontent.com/bob349-coder/ai-shuziren-collab/main/A/EP01_A01_v01.mp4 · A02 https://raw.githubusercontent.com/bob349-coder/ai-shuziren-collab/main/A/EP01_A02_v01.mp4 · A04 https://raw.githubusercontent.com/bob349-coder/ai-shuziren-collab/main/A/EP01_A04_v01.mp4 · A05 https://raw.githubusercontent.com/bob349-coder/ai-shuziren-collab/main/A/EP01_A05_v01.mp4（均为 1248×704/24fps/10秒，固定机位，无字幕无悬浮界面） |
 | U01–U10 实操采集 | 待平台恢复验证（fallback 待用户决定） |
 | 配音初剪/终审/交付 | GPT 负责，待开始 |
 
@@ -78,6 +78,8 @@
 - 测试机器人保留作能力验证；正式角色仍按成年男性 Q版定稿。下一步：R01 → 用户审核 → 派生 R02、制作 R03 → A03 抬腕看表样片。
 
 ## 八、更新日志
+
+- v2.1（2026-10-11）：A01/A02/A04/A05 v01 第一批已上传待审。
 
 - v2.0（2026-10-11）：A03 v03 干净版已上传待审；v02 保留作动作参考。
 
