@@ -1,0 +1,10 @@
+{
+  "task_id": "HANDOFF-001",
+  "revision": 1,
+  "synthetic_data_only": true,
+  "input_file": "input.csv",
+  "sha256": "6f5aad849d20d0f5f963e3df7c869bc96d3f6eb9eeca58890cdb36fe6affb21e",
+  "encoding": "UTF-8",
+  "rows_excluding_header": 4,
+  "unique_ids": 3
+}
