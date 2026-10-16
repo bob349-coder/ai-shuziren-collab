@@ -1,0 +1,54 @@
+{
+  "task_id": "HANDOFF-001",
+  "source_commit": "793fe0a05ca3a30c3a538bc55fb6ab53d8f1483c",
+  "checks": [
+    {
+      "name": "input_sha256_match",
+      "result": "PASS",
+      "actual": "input.csv 的 SHA-256 = 6f5aad849d20d0f5f963e3df7c869bc96d3f6eb9eeca58890cdb36fe6affb21e，与 input-manifest.json 声明一致"
+    },
+    {
+      "name": "input_utf8_readable",
+      "result": "PASS",
+      "actual": "input.csv 以 UTF-8 成功解码，无 BOM 问题"
+    },
+    {
+      "name": "input_rows_count",
+      "result": "PASS",
+      "actual": "除表头 4 行，与 manifest 的 rows_excluding_header=4 一致"
+    },
+    {
+      "name": "dedup_correct",
+      "result": "PASS",
+      "actual": "SIM-01 两行按带时区 updated_at 取较新者（2026-10-16T11:00:00+08:00，状态'已提交'）；无同时间冲突；去重后 3 个唯一 id，与 manifest 的 unique_ids=3 一致"
+    },
+    {
+      "name": "sort_ascending",
+      "result": "PASS",
+      "actual": "items 按 id 升序：SIM-01, SIM-02, SIM-03"
+    },
+    {
+      "name": "six_columns_fidelity",
+      "result": "PASS",
+      "actual": "每项恰含输入 6 列（id,title,status,tool_verification,user_acceptance,updated_at），字段值原样保留，未改写"
+    },
+    {
+      "name": "acceptance_not_upgraded",
+      "result": "PASS",
+      "actual": "所有事项 user_acceptance 保持'未确认'；SIM-02 的 status 保持'执行者声称完成'，未升级为测试通过；summary.json 未写 APPROVED，user_acceptance=pending"
+    },
+    {
+      "name": "deliver_files_json_parseable",
+      "result": "PASS",
+      "actual": "summary.json 与 validation.json 均为合法 JSON，可解析"
+    }
+  ],
+  "not_verified": [
+    "推送后远端验证（本文件写于推送前；推送后将只读核对提交与文件哈希）",
+    "Codex 独立审核（待 Codex 只读审核）",
+    "用户验收（user_acceptance=pending，保持未确认）",
+    "main 分支保护规则（查询需认证，本轮未动用凭证查询）",
+    "视频素材（按任务书要求未下载 A/、R/、test/ 素材）",
+    "PAT 推送权限的预先验证（按任务书，推送即验证；若权限不足则暂停报告）"
+  ]
+}

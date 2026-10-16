@@ -1,0 +1,33 @@
+{
+  "task_id": "HANDOFF-001",
+  "revision": 1,
+  "source_commit": "793fe0a05ca3a30c3a538bc55fb6ab53d8f1483c",
+  "status": "SUBMITTED",
+  "user_acceptance": "pending",
+  "items": [
+    {
+      "id": "SIM-01",
+      "title": "虚构目录整理",
+      "status": "已提交",
+      "tool_verification": "静态格式检查通过",
+      "user_acceptance": "未确认",
+      "updated_at": "2026-10-16T11:00:00+08:00"
+    },
+    {
+      "id": "SIM-02",
+      "title": "虚构链接检查",
+      "status": "执行者声称完成",
+      "tool_verification": "未运行",
+      "user_acceptance": "未确认",
+      "updated_at": "2026-10-16T10:00:00+08:00"
+    },
+    {
+      "id": "SIM-03",
+      "title": "虚构样稿排版",
+      "status": "待开始",
+      "tool_verification": "未运行",
+      "user_acceptance": "未确认",
+      "updated_at": "2026-10-16T12:00:00+08:00"
+    }
+  ]
+}
